@@ -1,0 +1,11 @@
+# Arquivos e diretórios específicos do Rust
+target/
+Cargo.lock
+
+# Configuração do editor (opcional)
+.idea/
+# Outros arquivos e diretórios genéricos
+*.swp
+*.log
+*.tmp
+.DS_Store
