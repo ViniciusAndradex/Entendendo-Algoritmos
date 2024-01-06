@@ -1,0 +1,36 @@
+Pesquisa Binária
+
+Um algoritmo de busca, busca sempre dividir a lista no qual ele está trabalhando pela metade em busca de reduzir sempre para a menor quantidade de possibilidades a sua busca. Uma caracteristicas importante deste algoritmo é que a lista deve estar *Ordenada*.
+
+Retornos
+
+Os tipos de retorno são:
+	1.  A posição do elemento de busca na lista;
+	2.	Null, None (Depende da Linguagem que estamos trabalhando).
+
+Desempenho Pesquisa Binária x Pesquisa Simples
+
+	Quando tratamos de desempenho neste livro, tratamos de notação big O (Explicada no próximo tópico).
+
+	1. 	Pesquisa Binária: Tratasse de um busca logarítmica', ou seja, Log2 N (O log se encontra na base 2 devido a notação big O trabalhar com este valor).
+		a.	logarítmica: Relembrando, Log10 100 implica dizer em "Quantos 10s conseguimos multiplicar para chegar a 100?". Log10 100 = 2 ou Log2 8 = 3.
+
+	2. Pesquisa Simples: Como o próprio nome indica é uma busca reta, onde a busca ocorre do primeiro ao último número até encontrar. Isso torna o algoritmo lento pois imagine no pior caso onde o valor que buscamos se encontra no último elemento? Uma perca gigantesca de tempo e processamento.
+
+_Observação_
+	Elementos de uma lista na maioria das linguagens começam em 0 logo o último elemento da lista sempre será [último - 1].
+
+	1. Exemplo: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] dada a lista qual a posição da elemento 9?
+		Resposta: 8, pois o primeiro elemento se encontra em 0!
+
+Entendendo o Algoritmo Pesquisa Binária
+
+Devemos incialmente pegar uma lista ordenada e o item que estamos buscando na mesma, o nosso algoritmo deve retornar a posição do elemento ou null caso não exista.
+
+1.	Defina as variáveis de valor mais alto e de valor mais baixo na lista (Primeiro e último elemento);
+2.	Dentro de um laço divida ao meio a lista e veja se o valor da posição é o que estamos buscando;
+3. 	Para verificar contruiremos os if que definirão se o valor encontrado é maior, menor ou o valor que busacamos;
+4.	os valors de maior e menor devem retornar, maior: valor do meio + 1 e menor: valor do meio - 1;
+5. 	Se encontrarmos o valor que buscamos, retornamos ele;
+6. 	Por fim se nada for atendido retorne none.
+
