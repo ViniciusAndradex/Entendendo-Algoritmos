@@ -1,0 +1,5 @@
+1.1 Suponha que você tenha uma lista com 128 nomese esteja fazendo uma pesquisa binária. Qual seria o número máximo de etappas que você levaria para encontrar o nome desejado?
+	128 / 2 -> 64 / 2 -> 32 / 2 -> 16 / 2 -> 8 / 2 -> 4 / 2 -> 2 / 2 -> 1 [ Resultado 7]
+
+1.2 Suponha que você duplique o tamanho da lsita. Qual seria o número máximo de etapas agora?
+	256 / 2 -> 128 ... -> 1 [Resultado 8]
