@@ -1,0 +1,33 @@
+Notação Big-O
+
+É uma notação especial ques diz o quão rápido é um algoritmo. Isso é importante para o crescimento de um dev pois quanto mais eficiente for o seu código mais eficiente ele se torna e isto é medido exatamente pelo parâmetro de rapidez/eficiência.
+
+Para isso temos que observar também o quão bem um algoritmo lida com o crescimento de items, mas não se enganem a notação BigO não mede exatemente o tempo que um algoritmo leva na sua execução, na realidade essa função fornece o número de operações que um algoritmo realiza.
+
+Por exemplo: 
+	1.	Pesquisa Binária: O(log n) -> Isso se dá pois olhando operação a operação o meu algoritmo possui log n operações.
+	2. 	Pesquisa Simples: O(n) 
+
+Pior Caso
+
+A notação BigO tem como objetivo medir o pior caso para aquele determinado algoritmo, então casos como a *Pesquisa simples, ficam cada vez pior com o aumento de execuções. 
+
+Alguns exemplos para tempos de execução em BigO
+
+	1.	O(log n): Tempo logarítmico, exemplo: Pesquisa Binária;
+	2.	O(n): Tempo linear, exemplo: pesquisa simples;
+	3.	O(n * log n): Exemplo -> Algoritimo de ordenação quicksort;
+	4.	O(n²): Exemplo -> Algoritmo lento de ordenação;
+	5.	O(n!): Exemplo -: Caixeiro viajante;
+	Observação: A lista está disposta do melhor para o pior.
+
+Pontos importantes desse tópico
+
+1.	A rapidez de um algoritmo não é medida em segundos, mas pelo crescimento do número de operações
+2.	A discussão que devemos levar nesse tipo de análise é o quão rápido aumento o número de execuções conforme o número de elementos aumenta
+3.	O tempo de execução é expresso em Big O ou O(...)
+4.	O(log n) é mais rápido que O(n), e O(log n) fica mais rápido conforme a lista for aumentando.
+
+Caxeiro Viajante
+
+Este é um problema O(n!), neste algoritmo um caixeiro deve passar em todas as cidades dispostas no mapa e analisar qual o melhor caminho para que ele faça a sua rota e ai que entra o problema pois para escolher devemos analisar todos os casos (n!), este é um problema que não existe solução mas que existe, isto prova que nem em todas as situações existe um algoritmo ótimo para aquela sitação.
